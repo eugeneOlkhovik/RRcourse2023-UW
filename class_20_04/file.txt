@@ -1,0 +1,36 @@
+➜  RRcourse2023-UW git:(main) clear
+➜  RRcourse2023-UW git:(main) ps aux | grep cpu
+eugeneolkhovik   11680   0.0  0.1 34604352   9024   ??  S    Tue01PM   0:02.74 /Applications/Docker.app/Contents/MacOS/com.docker.virtualization --kernel /Applications/Docker.app/Contents/Resources/linuxkit/kernel --cmdline page_poison=1 vsyscall=emulate panic=1 nospec_store_bypass_disable noibrs noibpb no_stf_barrier mitigations=off linuxkit.unified_cgroup_hierarchy=1 console=hvc0 tsc=reliable irqaffinity=0 vpnkit.connect=connect://2/1999 vpnkit.disable=osxfs-data --ramdisk /Applications/Docker.app/Contents/Resources/linuxkit/initrd.img --disk /Users/eugeneolkhovik/Library/Containers/com.docker.docker/Data/vms/0/data/Docker.raw --macaddr-filename vms/0/macaddr --cpus 6 --memoryMiB 8192 --console-log log/vm/console.log --console vms/0/console.sock --watchdog --vpnkit vpnkit.eth.sock
+eugeneolkhovik   80671   0.0  0.0 34122868    756 s000  R+    3:38PM   0:00.00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn --exclude-dir=.idea --exclude-dir=.tox cpu
+➜  RRcourse2023-UW git:(main) netstat -i | tail -3
+utun5      1380  macbook-pro fe80:13::54e5:81b        0     -       77     -     -
+utun6      1380  <Link#20>                            0     0       77     0     0
+utun6      1380  macbook-pro fe80:14::b5a7:1aa        0     -       77     -     -
+➜  RRcourse2023-UW git:(main) ls
+5. RR_git4                  6. Coding and documentation Notes                       README.md
+➜  RRcourse2023-UW git:(main) cd ~
+➜  ~ cd /etc
+➜  /etc ls
+afpovertcp.cfg                        csh.login~orig                        irbrc                                 nfs.conf~orig                         profile~orig                          snmp
+afpovertcp.cfg~orig                   csh.logout                            kern_loader.conf                      notify.conf                           protocols                             ssh
+aliases                               csh.logout~orig                       kern_loader.conf~previous             ntp.conf                              protocols~previous                    ssl
+aliases.db                            cups                                  krb5.keytab                           ntp_opendirectory.conf                racoon                                sudo_lecture
+apache2                               defaults                              localtime                             openldap                              rc.common                             sudoers
+asl                                   emond.d                               locate.rc                             pam.d                                 rc.common~previous                    sudoers.d
+asl.conf                              find.codes                            mail.rc                               passwd                                rc.netboot                            sudoers~orig
+auto_home                             find.codes~orig                       mail.rc~orig                          paths                                 resolv.conf                           syslog.conf
+auto_master                           fstab.hd~previous                     man.conf                              paths.d                               rmtab                                 syslog.conf~previous
+auto_master~orig                      ftpusers                              manpaths                              paths~orig                            rpc                                   ttys
+autofs.conf                           ftpusers~orig                         manpaths.d                            periodic                              rpc~previous                          ttys~previous
+bashrc                                gettytab                              master.passwd                         pf.anchors                            rtadvd.conf                           uucp
+bashrc_Apple_Terminal                 gettytab~orig                         master.passwd~orig                    pf.conf                               rtadvd.conf~previous                  wfs
+bashrc~previous                       group                                 networks                              pf.os                                 security                              xtab
+com.apple.screensharing.agent.launchd group~previous                        networks~orig                         php.ini.default-previous              services                              zprofile
+csh.cshrc                             hosts                                 newsyslog.conf                        postfix                               services~previous                     zshrc
+csh.cshrc~orig                        hosts.equiv                           newsyslog.d                           ppp                                   shells                                zshrc_Apple_Terminal
+csh.login                             hosts~orig                            nfs.conf                              profile                               shells~orig
+➜  /etc pwd
+/etc
+➜  /etc head -3 ntp.conf
+server time.euro.apple.com
+➜  /etc
