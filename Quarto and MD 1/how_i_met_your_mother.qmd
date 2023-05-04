@@ -22,7 +22,7 @@ library(reticulate)
 
 ![logo](Howimetyourmother.jpg)
 
-#### Basic statistics for *How I met your mother*:
+### Basic statistics for *How I met your mother*:
 
 - Running time: 22 minutes
 - Number of seasons: 9 
@@ -31,6 +31,22 @@ library(reticulate)
 - Genre: Sitcom, Romatic Comedy
 - Original language: English
 
+### Viewership over time
+<span style="color: red; font-size: 12px">I was not sure how viewership should be provided, thus there will be 2 versions - one is a inserted picture and another is plotted graph with csv file and R code</span>
+
+#### From Wiki
+![](Himym_viewers.png)
+
+#### With R code
+```{r echo=FALSE}
+library(ggplot2)
+
+viewership_data <- read.csv("viewers.csv")
+ggplot(viewership_data, aes(x=Season, y=Viewers)) +
+  geom_line() +
+  labs(title="How I met your mother Over Time", x="Season", y="Viewers (millions)") +
+  theme_minimal()
+```
 # ASSIGNMENT
 
 Pick a TV show that had its premieres on TV and thus has some viewership numbers reported on Wikipedia. E.g. [Suits](https://en.wikipedia.org/wiki/List_of_Suits_episodes) (see table just above the References)
