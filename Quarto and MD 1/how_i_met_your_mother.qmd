@@ -22,7 +22,14 @@ library(reticulate)
 
 ![logo](Howimetyourmother.jpg)
 
+#### Basic statistics for *How I met your mother*:
 
+- Running time: 22 minutes
+- Number of seasons: 9 
+- Number of episodes: 208
+- Country of origin: United States
+- Genre: Sitcom, Romatic Comedy
+- Original language: English
 
 # ASSIGNMENT
 
