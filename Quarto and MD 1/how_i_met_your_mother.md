@@ -16,10 +16,29 @@ execute:
 keep-md: true
 ---
 
-```{r}
+
+::: {.cell}
+
+````{.cell-code}
+```{{r}}
 library(chron)
+```
+````
+
+::: {.cell-output .cell-output-stderr}
+```
+Warning: package 'chron' was built under R version 4.1.2
+```
+:::
+
+````{.cell-code}
+```{{r}}
 library(reticulate)
 ```
+````
+:::
+
+
 
 ------------------------------------------------------------------------
 
@@ -45,15 +64,21 @@ library(reticulate)
 ![](HIMYM_files/Himym_viewers.png)
 
 #### With R code
-```{r echo=FALSE}
-library(ggplot2)
 
-viewership_data <- read.csv("HIMYM_files/viewers.csv")
-ggplot(viewership_data, aes(x=Season, y=Viewers)) +
-  geom_line() +
-  labs(title="How I met your mother Over Time", x="Season", y="Viewers (millions)") +
-  theme_minimal()
+
+::: {.cell}
+::: {.cell-output .cell-output-stderr}
 ```
+Warning: package 'ggplot2' was built under R version 4.1.2
+```
+:::
+
+::: {.cell-output-display}
+![](how_i_met_your_mother_files/figure-pdf/unnamed-chunk-4-1.pdf)
+:::
+:::
+
+
 
 #### Viewership description 
 

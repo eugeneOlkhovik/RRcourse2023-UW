@@ -1,0 +1,17 @@
+---
+title: "How I met your mother report"
+author: "Evgeniy Alkhovik"
+date: "5/4/2023"
+format: 
+  html:
+    toc: true
+    toc_depth: 2
+    number_sections: true
+    code_folding: hide
+    theme: cerulean
+  pdf:
+    toc: true
+execute:
+  echo: fenced
+keep-md: true
+---
